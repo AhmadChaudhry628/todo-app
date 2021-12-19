@@ -27,11 +27,3 @@ Access React app on `http://localhost:3000` and test the server on `https://loca
 ## Additional notes
 
 Tested on Linux Mint 20.1 / Ubuntu 20.04. 
-
-For nodemon restart to work there is `-L` flag in `"server": "nodemon -L server.js"` in `package.json`. 
-
-For create-react-app to live reload there is `CHOKIDAR_USEPOLLING=true` environment var in `docker-compose.yml`. 
-
-For mongo volume to work in the Windows VirtualBox shared folder there is `volumes: mongodata:`. 
-
-Note that `command` in the `docker-compose.yml` overrides the `CMD` in the `Dockerfile`.
