@@ -44,7 +44,13 @@ services:
       - "3000:3000"
     networks:
       - app-network
-
+  nginx:
+        build:
+            context: ./nginx
+            dockerfile: Dockerfile.dev
+        ports: 
+            - 3000:80
+        restart: always
 networks:
     app-network:
         driver: bridge
