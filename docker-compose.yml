@@ -47,9 +47,9 @@ services:
   nginx:
         build:
             context: ./nginx
-            dockerfile: Dockerfile.dev
+            dockerfile: Dockerfile
         ports: 
-            - 3000:80
+            - 10000:80
         restart: always
 networks:
     app-network:
